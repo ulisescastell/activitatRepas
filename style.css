@@ -8,11 +8,12 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+
 }
 
 h2 {
     color: black;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 h1 {
@@ -28,7 +29,7 @@ body::before {
     height: 100%;
     background-image: url('https://imgs.search.brave.com/R9UfelDJYP1rY0vSS0ghtHyHR2_aBg0dB2OFNjHCRdU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93aWtp/YW5pbWFsZXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzAyLyVDMiVCRkN1/YW50b3MtZGllbnRl/cy10aWVuZS11bi1j/YXN0b3Iud2VicC53/ZWJw');
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: -1;
 }
 
@@ -45,7 +46,7 @@ body::before {
 
 .header-container ul {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -55,6 +56,8 @@ body::before {
 
 iframe {
     border-radius: 20px;
+    width: 60%;
+    height: 60rem
 }
 
 .videoContainer {
@@ -96,8 +99,10 @@ iframe {
 
 .galeria img:hover {
     transition: all 400ms;
-    scale: 1.1;
+    transform: scale(1.1); 
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5); 
 }
+
 
 @media (max-width: 768px) {
     .galeria {
@@ -122,4 +127,12 @@ iframe {
 
 p {
     font-size: 40px;
+}
+
+footer {
+    padding: 1rem
+}
+
+footer p {
+    font-size: 20px
 }
